@@ -1,4 +1,4 @@
 baseURL = 'plundh.github.io'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+title = 'Petter Lundh'
+theme = 'eternity'
