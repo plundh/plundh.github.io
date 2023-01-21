@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    undefined
+    <style>
+        undefined
+    </style>
+</head>
+
+<body id="page">
+    undefined
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }, data] = await Promise.all([
+            import(path + '/_module.js'),
+            fetch('/en.json').then(res => res.json())
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
